@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: ai-task-platform
+resources:
+  - namespace.yaml
+  - configmap.yaml
+  - secret.yaml
+  - mongodb.yaml
+  - redis.yaml
+  - backend.yaml
+  - worker.yaml
+  - frontend.yaml
+  - ingress.yaml
+images:
+  - name: rorabo/ai-task-backend
+    newTag: 92e9b4d
+  - name: rorabo/ai-task-worker
+    newTag: 92e9b4d
+  - name: rorabo/ai-task-frontend
+    newTag: 92e9b4d
