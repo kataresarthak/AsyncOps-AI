@@ -13,8 +13,8 @@ resources:
   - ingress.yaml
 images:
   - name: rorabo/ai-task-backend
-    newTag: 92e9b4d
+    newTag: d2744da
   - name: rorabo/ai-task-worker
-    newTag: 92e9b4d
+    newTag: d2744da
   - name: rorabo/ai-task-frontend
-    newTag: 92e9b4d
+    newTag: d2744da
